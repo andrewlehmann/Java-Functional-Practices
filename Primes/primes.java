@@ -1,5 +1,7 @@
 import java.util.stream.IntStream;
+import java.util.function.Predicate;
 
+// this was created following Dr. Venkat's tutorial
 public class Sample {
 	public static void main(String[] args) {
 		System.out.println(isPrime(1));
@@ -16,9 +18,11 @@ public class Sample {
 	}
 	// functional style
 	private static boolean isPrime(final int number) {
+		Predicate<Integer> isDivisible = int divisor -> number % divisor == 0;
+
 		return number > 1 &&
 			IntStream.range(2, number)
-				.noneMatch(index -> number % index == 0);
+				.noneMatch(index -> isDivisible(index));
 	}
 
 	}
