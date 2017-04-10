@@ -19,6 +19,7 @@ public class Doubles {
 
 	public static void main(String[] args) {
 		//find the number of the first even number greater than 3
+		//make it work first, then make it better very soon.
 		List<Integer> values = Arrays.asList(1, 2, 3, 5, 4, 6, 7, 8, 9, 10);
 		System.out.println(
 			values.stream()
