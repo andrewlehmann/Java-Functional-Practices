@@ -6,14 +6,20 @@ import java.util.List;
 
 public class Doubles {
 	public static boolean isGreaterThan3(int number) {
+		System.out.println("greater than 3?");
 		return number > 3;
+
 	}
 
 	public static boolean isEven(int number) {
+		System.out.println("even?");
+
 		return number % 2 == 0;
 	}
 
 	public static int doubleIt(int number) {
+		System.out.println("double");
+
 		return number * 2;
 	}
 
