@@ -19,7 +19,7 @@ public class ListHiddenFiles {
         List<File> files = new ArrayList<>();
         
         File[] filesInCurrentDir = new File(".").listFiles();
-        for (File file : filesInCurentDir) {
+        for (File file : filesInCurrentDir) {
             File[] filesInSubDir = file.listFiles();
             if (filesInSubDir != null) {
                 files.addAll(Arrays.asList(filesInSubDir));

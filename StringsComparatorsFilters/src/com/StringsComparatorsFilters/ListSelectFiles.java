@@ -10,7 +10,7 @@ public class ListSelectFiles {
     public static void main(String[] args) throws IOException {
         // bad version
         final String[] files =
-                new File("fpij").list((dir, name) -> name.endsWith(".java");
+                new File("fpij").list((dir, name) -> name.endsWith(".java"));
         System.out.println(files);
         
         //cool version, display only .java files in directory
